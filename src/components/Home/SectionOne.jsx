@@ -18,7 +18,7 @@ const SectionOne = () => {
             "text-4xl lg:text-5xl xl:text-7xl 2xl:text-[120px] text-start font-semibold uppercase tracking-tighter text-white"
           }
         />
-        <h2 className="text-base lg:text-xl 2xl:text-2xl font-normal lg:w-[60%] xl:w-[70%] 2xl:w-[95%] text-start tracking-normal xl:leading-9 ">
+        <h2 className="text-base lg:text-xl 2xl:text-2xl font-normal w-[95%] text-start tracking-normal xl:leading-9 ">
           Struggling to select from thousands of CVs? onBoard makes hiring easy
           by providing only shortlisted candidates after initial interviews.
         </h2>

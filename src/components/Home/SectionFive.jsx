@@ -10,7 +10,7 @@ const SectionFive = () => {
         <h1 className="text-4xl lg:text-5xl xl:text-7xl 2xl:text-[108px] text-start font-semibold mx-0 px-0 uppercase tracking-tighter text-white">
           Start Today Don’t Wait!
         </h1>
-        <p className="text-base px-2 lg:text-xl 2xl:text-2xl font-normal lg:w-[50%] xl:w-[45%] 2xl:w-[95%] text-start tracking-normal xl:leading-9">
+        <p className="text-base px-2 lg:text-xl 2xl:text-2xl font-normal w-[95%] text-start tracking-normal xl:leading-9">
           Join onBoard today and streamline your hiring process. Employers find
           top talent fast, and candidates land their dream jobs effortlessly!
         </p>
