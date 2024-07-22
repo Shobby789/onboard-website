@@ -3,6 +3,7 @@ import SectionOne from "../../components/Home/SectionOne";
 import SectionTwo from "../../components/Home/SectionTwo";
 import SectionThree from "../../components/Home/SectionThree";
 import SectionFive from "../../components/Home/SectionFive";
+// import CustomScrollbar from "../../components/Global/CustomScrollbar";
 // import HomeAnimation from "../../components/Home/HomeAnimation";
 
 const Home = () => {
@@ -12,7 +13,6 @@ const Home = () => {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
-      {/* <SectionFour /> */}
       <SectionFive />
     </div>
   );

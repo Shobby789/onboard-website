@@ -10,7 +10,7 @@ import AnimatedText from "../Global/AnimateTextCharacter";
 
 const SectionOne = () => {
   return (
-    <main className="w-full horizontal-padding h-screen section-one relative grid grid-cols-1 xl:grid-cols-2">
+    <main className="w-full horizontal-padding h-screen section-one relative grid grid-cols-1 xl:grid-cols-2 ">
       <div className="flex flex-col items-center justify-center relative gap-y-6">
         <AnimatedText
           text={"Hiring Made Easy!"}

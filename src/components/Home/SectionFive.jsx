@@ -5,8 +5,8 @@ import EffectCardsAnimation from "./EffectCards";
 
 const SectionFive = () => {
   return (
-    <section className="w-full horizontal-padding h-screen section-five grid grid-cols-1 xl:grid-cols-2">
-      <div className="flex flex-col gap-y-6 items-start text-start justify-center px-0">
+    <section className="w-full horizontal-padding h-screen section-five  grid grid-cols-1 lg:grid-cols-2">
+      <div className="flex flex-col gap-y-6 items-start text-start justify-center px-0 col-span-2 lg:col-span-1">
         <h1 className="text-4xl lg:text-5xl xl:text-7xl 2xl:text-[108px] text-start font-semibold mx-0 px-0 uppercase tracking-tighter text-white">
           Start Today Don’t Wait!
         </h1>
@@ -28,7 +28,7 @@ const SectionFive = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center col-span-2 lg:col-span-1">
         <EffectCardsAnimation />
       </div>
     </section>

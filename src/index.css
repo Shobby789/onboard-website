@@ -17,6 +17,12 @@
   font-family: "Bebas Neue", sans-serif;
 }
 
+.section-two {
+  /* background: #ff5733; */
+  /* background: #ff5252; */
+  background: #fff;
+}
+
 :root {
   --cards-bg: "";
 }
@@ -37,7 +43,7 @@ body {
 
 .section-heading {
   /* font-family: "Bebas Neue", sans-serif; */
-  @apply text-4xl lg:text-5xl xl:text-7xl 2xl:text-[110px] text-center font-semibold uppercase tracking-tighter text-white;
+  @apply text-4xl lg:text-5xl xl:text-7xl 2xl:text-[110px] text-center font-semibold uppercase tracking-tighter;
 }
 
 .section-one {
@@ -46,13 +52,14 @@ body {
 }
 
 .section-three {
-  background: rgb(131, 58, 180);
+  /* background: rgb(131, 58, 180);
   background: linear-gradient(
     90deg,
     rgba(131, 58, 180, 1) 0%,
     rgba(253, 29, 29, 1) 50%,
     rgba(252, 176, 69, 1) 100%
-  );
+  ); */
+  background-color: #f42029;
 }
 
 .section-four > h1 {
