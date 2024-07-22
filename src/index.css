@@ -94,8 +94,8 @@ section {
 
 /* effect cards */
 .swiper {
-  width: 400px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {

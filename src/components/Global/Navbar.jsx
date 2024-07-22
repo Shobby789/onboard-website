@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="w-full py-4 2xl:py-10 flex items-center justify-between horizontal-padding fixed top-0 z-50">
       {/* <h1 className="text-2xl font-semibold">Navbar</h1> */}
-      <div className="flex items-center gap-1">
+      <div className="flex items-center gap-x-1">
         <img
           src="/onboard-logo-1.png"
           alt=""

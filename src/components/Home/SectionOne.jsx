@@ -2,6 +2,7 @@ import React from "react";
 import EncryptButton from "../Global/AnimatedButton";
 import { motion } from "framer-motion";
 import AnimatedText from "../Global/AnimateTextCharacter";
+import { Link } from "react-router-dom";
 {
   /* <h1 className="z-10 section-heading">Hiring Made Easy!</h1> */
   // absolute bottom-32 lg:bottom-6 2xl:bottom-16
@@ -10,18 +11,33 @@ import AnimatedText from "../Global/AnimateTextCharacter";
 
 const SectionOne = () => {
   return (
-    <main className="w-full horizontal-padding h-screen section-one relative grid grid-cols-1 xl:grid-cols-2 ">
-      <div className="flex flex-col items-center justify-center relative gap-y-6">
+    <main className="w-full horizontal-padding h-[110vh] lg:h-screen section-one relative grid grid-cols-1 xl:grid-cols-2 ">
+      <div className="flex flex-col items-center justify-center relative gap-y-4">
         <AnimatedText
           text={"Hiring Made Easy!"}
           className={
-            "text-4xl lg:text-5xl xl:text-7xl 2xl:text-[120px] text-start font-semibold uppercase tracking-tighter text-white"
+            "text-4xl lg:text-5xl xl:text-7xl 2xl:text-[120px] text-start font-semibold uppercase tracking-tighter text-white lg:pl-1"
           }
         />
-        <h2 className="text-base lg:text-xl 2xl:text-2xl font-normal w-[95%] text-start tracking-normal xl:leading-9 ">
+        <h2 className="text-base lg:text-xl 2xl:text-2xl font-normal w-full text-start tracking-normal xl:leading-9 lg:pl-3">
           Struggling to select from thousands of CVs? onBoard makes hiring easy
           by providing only shortlisted candidates after initial interviews.
         </h2>
+
+        <div className="w-full flex items-center lg:pl-3 gap-5 mt-4">
+          <Link
+            to="/"
+            className="bg-white text-black font-semibold px-6 py-3 rounded-md text-[15px]"
+          >
+            Get A Job
+          </Link>
+          <Link
+            to="/"
+            className="bg-white text-black font-semibold px-6 py-3 rounded-md text-[15px]"
+          >
+            Recruit Talent
+          </Link>
+        </div>
       </div>
       <div className="relative">
         <motion.div

@@ -13,7 +13,7 @@ import reviews from "../../constants/reviews";
 
 export default function EffectCardsAnimation() {
   return (
-    <>
+    <div className="lg:w-[320px] lg:h-[400px] 2xl:w-[400px] 2xl:h-[500px]">
       <Swiper
         effect={"cards"}
         grabCursor={true}
@@ -28,6 +28,6 @@ export default function EffectCardsAnimation() {
           );
         })}
       </Swiper>
-    </>
+    </div>
   );
 }
