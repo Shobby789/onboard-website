@@ -17,23 +17,12 @@
   font-family: "Bebas Neue", sans-serif;
 }
 
-.section-two {
-  /* background: #ff5733; */
-  /* background: #ff5252; */
-  background: #fff;
-}
-
-:root {
-  --cards-bg: "";
-}
-
+/* width */
 ::-webkit-scrollbar {
   display: none;
 }
 
 body {
-  background-color: #161616;
-  color: white;
   overflow-x: hidden;
 }
 
@@ -46,50 +35,25 @@ body {
   @apply text-4xl lg:text-5xl xl:text-7xl 2xl:text-[110px] text-center font-semibold uppercase tracking-tighter;
 }
 
+.green-text {
+  @apply text-[#00bf63];
+}
+
+textarea {
+  resize: none;
+}
+
+.text-size {
+  @apply text-[15px];
+}
+
 .section-one {
   background-color: #00bf63;
   position: relative !important;
 }
 
 .section-three {
-  /* background: rgb(131, 58, 180);
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
-  ); */
   background-color: #f42029;
-}
-
-.section-four > h1 {
-  color: #161616;
-}
-
-.section-seven > h1 {
-  color: #485083;
-}
-
-section {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.content {
-  position: relative;
-}
-
-.progress {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 4px;
-  width: 100%;
-  background: #000;
-  transform-origin: 0% 50%;
 }
 
 /* effect cards */
@@ -103,9 +67,6 @@ section {
   align-items: center;
   justify-content: center;
   border-radius: 18px;
-  /* font-size: 22px; */
-  /* font-weight: bold; */
-  /* color: #fff; */
 }
 
 .swiper-slide:nth-child(1n) {
@@ -148,18 +109,10 @@ section {
   background-color: rgb(54, 94, 77);
 }
 
-@keyframes opacityAnimate {
-  0% {
-    opacity: 0.1;
-  }
-  50% {
-    opacity: 0.25;
-  }
-  100% {
-    opacity: 0.5;
-  }
+/* Contact page */
+.ContactHeader {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/contact-header-image.jpg");
+  background-position: center;
+  background-size: cover;
 }
-
-/* .animate-tree {
-  animation: opacityAnimate 3s infinite ease-in-out;
-} */

@@ -1,5 +1,4 @@
 import React from "react";
-import EncryptButton from "../Global/AnimatedButton";
 import { motion } from "framer-motion";
 import AnimatedText from "../Global/AnimateTextCharacter";
 import { Link } from "react-router-dom";
@@ -19,7 +18,7 @@ const SectionOne = () => {
             "text-4xl lg:text-5xl xl:text-7xl 2xl:text-[120px] text-start font-semibold uppercase tracking-tighter text-white lg:pl-1"
           }
         />
-        <h2 className="text-sm lg:text-xl 2xl:text-2xl font-normal w-full text-start tracking-normal 2xl:leading-9 pl-3">
+        <h2 className="text-sm lg:text-xl 2xl:text-2xl font-normal w-full text-start tracking-normal 2xl:leading-9 pl-3 text-white">
           Struggling to select from thousands of CVs? onBoard makes hiring easy
           by providing only shortlisted candidates after initial interviews.
         </h2>

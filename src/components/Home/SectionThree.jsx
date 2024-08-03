@@ -8,7 +8,7 @@ const SectionThree = () => {
         <h1 className="text-4xl lg:text-5xl xl:text-7xl 2xl:text-[108px] text-start font-semibold mx-0 px-0 uppercase tracking-tighter text-white">
           Enjoy One Month Free Trial!
         </h1>
-        <p className="text-base px-2 lg:text-xl 2xl:text-2xl font-normal text-start tracking-normal xl:leading-9">
+        <p className="text-base px-2 lg:text-xl 2xl:text-2xl font-normal text-start tracking-normal xl:leading-9 text-white">
           Experience seamless hiring with onBoard - shortlisted candidates,
           initial interviews, and no cost for the first month.
         </p>
