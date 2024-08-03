@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoPlayForwardSharp } from "react-icons/io5";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Swal from "sweetalert2";
+import ReactJsAlert from "reactjs-alert";
+import toast, { Toaster } from "react-hot-toast";
+
+<Toaster position="bottom-right" reverseOrder={false} />;
 
 const validationSchema = Yup.object({
   name: Yup.string().required("Your Name is required"),
@@ -27,11 +31,17 @@ const ContactForm = () => {
     subject: "",
     message: "",
   };
+  const [status, setStatus] = useState(false);
+  const [type, setType] = useState("");
+  const [title, setTitle] = useState("");
 
   const handleSubmit = async (values, { setSubmitting, resetForm }) => {
     try {
       // Simulate form submission
-      console.log("Form data submitted:", values);
+      // console.log("Form data submitted:", values);
+      //   setStatus(true);
+      //   setType("success");
+      //   setTitle("This is a success alert");
 
       // Show success message
       Swal.fire({
@@ -40,6 +50,13 @@ const ContactForm = () => {
         showConfirmButton: false,
         timer: 1500,
       });
+
+      //   toast.promise(saveSettings(settings), {
+      //     loading: "Saving...",
+      //     success: <b>Settings saved!</b>,
+      //     error: <b>Could not save.</b>,
+      //   });
+
       resetForm();
     } catch (error) {
       console.error("Error submitting form:", error.message);
@@ -62,6 +79,14 @@ const ContactForm = () => {
             get in touch
           </h1>
         </div>
+        {/* <ReactJsAlert
+          status={status} // true or false
+          type={type} // success, warning, error, info
+          title={title}
+          quotes={true}
+          quote="This is a dummy design that shows an example of reactjs-alert"
+          Close={() => setStatus(false)}
+        /> */}
 
         <h2 className="text-3xl lg:text-5xl font-semibold">
           Reach Out Drop us a Line Here

@@ -3,6 +3,8 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { routes } from "./routes/routes";
 import Loader from "./components/Global/Loader";
+import "regenerator-runtime/runtime";
+import "core-js/stable";
 
 function App() {
   return (
