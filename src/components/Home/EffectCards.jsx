@@ -13,7 +13,7 @@ import reviews from "../../constants/reviews";
 
 export default function EffectCardsAnimation() {
   return (
-    <div className="w-[280px] h-[340px] md:h-[400px] 2xl:w-[410px] 2xl:h-[490px]">
+    <div className="w-[280px] h-[340px] md:h-[400px] lg:w-[350px] lg:h-[420px] 2xl:w-[410px] 2xl:h-[490px]">
       <Swiper
         effect={"cards"}
         grabCursor={true}

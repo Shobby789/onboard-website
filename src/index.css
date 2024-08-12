@@ -11,23 +11,37 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .bebas-nue-font {
   font-family: "Bebas Neue", sans-serif;
 }
 
-/* width */
 ::-webkit-scrollbar {
+  /* width: 6px; */
   display: none;
 }
+
+/* ::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00bf63;
+  border-radius: 14px;
+} */
 
 body {
   overflow-x: hidden;
 }
 
 .horizontal-padding {
-  @apply px-4 lg:px-8 xl:px-16 2xl:px-32;
+  @apply px-4 lg:px-8 xl:px-16 2xl:px-44;
+}
+
+.inner-padding {
+  @apply px-4 lg:px-8;
 }
 
 .section-heading {
@@ -39,6 +53,10 @@ body {
   @apply text-[#00bf63];
 }
 
+.green-bg {
+  @apply bg-[#00bf63];
+}
+
 textarea {
   resize: none;
 }
@@ -47,13 +65,13 @@ textarea {
   @apply text-[15px];
 }
 
-.section-one {
-  background-color: #00bf63;
-  position: relative !important;
+/* shadow */
+.custom-shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.section-three {
-  background-color: #f42029;
+.custom-shadow-2 {
+  box-shadow: rgba(101, 111, 100, 0.2) 0px 17px 49px 0px;
 }
 
 /* effect cards */
@@ -116,3 +134,51 @@ textarea {
   background-position: center;
   background-size: cover;
 }
+
+/* custom scrollbar */
+/* Container for the custom scrollbar */
+.custom-scrollbar {
+  position: fixed;
+  top: 20%;
+  right: 20px;
+  width: 10px;
+  height: 60%;
+  background-color: #f0f0f0;
+}
+
+/* The thumb of the scrollbar */
+.scrollbar-thumb {
+  width: 100%;
+  background-color: #00bf63;
+  transition: height 0.2s ease-in-out;
+}
+
+/* proudly built in pakistan section animation start */
+@keyframes animateUp {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-10px, -10px);
+  }
+}
+
+.animate-move-up {
+  animation: animateUp 5s ease-in-out infinite;
+}
+
+@keyframes animateDown {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, 10px);
+  }
+}
+
+.animate-move-down {
+  animation: animateDown 5s ease-in-out infinite;
+}
+/* proudly built in pakistan section animation end */

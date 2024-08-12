@@ -3,7 +3,7 @@ import React from "react";
 const EffectCard = ({ review }) => {
   return (
     <div
-      className="w-full flex flex-col items-center justify-center h-full px-6 2xl:px-10 bg-black gap-y-6 2xl:gap-8 text-center"
+      className="w-full flex flex-col items-center justify-center h-full px-6 2xl:px-10 bg-black gap-y-6 2xl:gap-8 text-center rounded-[18px]"
       style={{
         background: review?.bg_color,
       }}
