@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import Swal from "sweetalert2";
 import ReactJsAlert from "reactjs-alert";
 import toast, { Toaster } from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 <Toaster position="bottom-right" reverseOrder={false} />;
 
@@ -24,6 +25,7 @@ const validationSchema = Yup.object({
 });
 
 const ContactForm = () => {
+  const navigate = useNavigate();
   const initialValues = {
     name: "",
     email: "",
@@ -58,6 +60,7 @@ const ContactForm = () => {
       //   });
 
       resetForm();
+      navigate("/thank-you");
     } catch (error) {
       console.error("Error submitting form:", error.message);
       Swal.fire({
@@ -71,7 +74,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full py-20 bg-green-50 horizontal-padding">
+    <div className="w-full py-20 horizontal-padding">
       <div className="w-full text-center flex flex-col items-center justify-center gap-10">
         <div className="w-full flex items-center justify-center gap-2">
           <IoPlayForwardSharp className="green-text text-lg" />
@@ -174,7 +177,7 @@ const ContactForm = () => {
               <div className="w-full flex justify-center mt-10">
                 <button
                   type="submit"
-                  className="bg-[#00bf63] text-white px-7 py-4 rounded-lg"
+                  className="bg-[#00bf63] text-white px-7 py-4 rounded-full"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}

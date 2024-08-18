@@ -1,5 +1,7 @@
 import { lazy } from "react";
 import Layout from "../components/Global/Layout";
+import ThankYouPage from "../pages/thankyou/ThankYouPage";
+import Layout2 from "../components/Global/Layout2";
 
 const HomePage = lazy(() => import("../pages/home/Home"));
 const AboutUsPage = lazy(() => import("../pages/aboutus/AboutUs"));
@@ -20,5 +22,10 @@ export const routes = [
     title: "Contact Us Page",
     url: "/contact-us",
     page: <Layout pages={<ContactUsPage />} />,
+  },
+  {
+    title: "Thank You Page",
+    url: "/thank-you",
+    page: <Layout2 pages={<ThankYouPage />} />,
   },
 ];

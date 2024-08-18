@@ -6,6 +6,7 @@ import Loader from "./components/Global/Loader";
 import "regenerator-runtime/runtime";
 import "core-js/stable";
 import CustomScrollbar from "./components/Global/CustomScrollbar";
+import Socials from "./components/Global/Socials";
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -28,6 +29,7 @@ function App() {
   return (
     <Suspense fallback={<Loader />}>
       <CustomScrollbar scrollPosition={scrollPosition} />
+      {/* <Socials /> */}
       <Routes>
         {routes.map((route, index) => {
           return <Route path={route.url} element={route.page} key={index} />;
