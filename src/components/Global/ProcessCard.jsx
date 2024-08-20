@@ -1,9 +1,15 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { FaCheck } from "react-icons/fa6";
 
 const ProcessCard = ({ heading, count }) => {
   return (
-    <div className="w-full lg:w-[85%] 2xl::w-[70%] flex flex-col items-center mx-auto relative">
+    <motion.div
+      initial={{ opacity: 0.5, scale: 0.7 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1 }}
+      className="w-full lg:w-[85%] 2xl::w-[70%] flex flex-col items-center mx-auto relative"
+    >
       <div className="lg:h-[50vh] 2xl:h-[35vh] p-8 lg:block lg:w-[35%] 2xl:w-[28%] rounded-[48px] bg-green-500 absolute hidden lg:left-2 2xl:left-10 top-16 2xl:top-20"></div>
       <div className="h-auto lg:h-[70vh] 2xl:h-[50vh] lg:w-[85%] 2xl:w-[65%] rounded-[48px] p-6 xl:p-8 2xl:p-14 custom-shadow-2 mx-auto flex items-center bg-white">
         <div className="w-full lg:w-[90%] 2xl:w-[40%] hidden lg:block"></div>
@@ -40,7 +46,7 @@ const ProcessCard = ({ heading, count }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

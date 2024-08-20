@@ -1,9 +1,13 @@
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { LuArrowDownLeft } from "react-icons/lu";
 
 const FaqCard = ({ question, answer, index, isOpen, handleOpen }) => {
   return (
-    <button
+    <motion.button
+      initial={{ opacity: 0.5, scale: 0.7 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1 }}
       type="button"
       onClick={() => handleOpen(index)}
       className={`w-full custom-shadow rounded-2xl p-6 2xl:p-8 flex flex-col items-start gap-4 ${
@@ -30,7 +34,7 @@ const FaqCard = ({ question, answer, index, isOpen, handleOpen }) => {
       {isOpen && (
         <p className="text-start text-[15px] text-gray-500">{answer}</p>
       )}
-    </button>
+    </motion.button>
   );
 };
 

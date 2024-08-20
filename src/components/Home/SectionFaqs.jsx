@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FaqCard from "../Global/FaqCard";
 import { LuArrowDownLeft } from "react-icons/lu";
+import { motion } from "framer-motion";
 
 export const faqs = [
   {
@@ -53,9 +54,14 @@ const SectionFaqs = () => {
   return (
     <section className="w-full horizontal-padding relative py-12 xl:py-24 2xl:pb-40 2xl:pt-28">
       <div className="flex flex-col items-center justify-center gap-y-8">
-        <h1 className="text-4xl lg:text-5xl xl:text-7xl text-start font-semibold uppercase tracking-tighter text-black pl-3">
+        <motion.h1
+          initial={{ opacity: 0.5, scale: 0.7 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          className="text-4xl lg:text-5xl xl:text-7xl text-start font-semibold uppercase tracking-tighter text-black pl-3"
+        >
           Frequently Asked <span className="text-green-500">Questions</span>
-        </h1>
+        </motion.h1>
       </div>
       <div className="w-full lg:w-[80%] mx-auto mt-6 lg:mt-8 2xl:mt-12 grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 gap-x-6 gap-y-6 2xl:gap-y-12">
         {faqs.map((faq, index) => {

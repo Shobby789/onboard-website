@@ -3,11 +3,6 @@ import { motion } from "framer-motion";
 import AnimatedText from "../Global/AnimateTextCharacter";
 import { Link } from "react-router-dom";
 import { LuArrowRight } from "react-icons/lu";
-{
-  /* <h1 className="z-10 section-heading">Hiring Made Easy!</h1> */
-  // absolute bottom-32 lg:bottom-6 2xl:bottom-16
-  // border-cyan-700
-}
 
 const SectionOne = () => {
   return (
@@ -20,13 +15,23 @@ const SectionOne = () => {
               "text-4xl lg:text-5xl xl:text-7xl 2xl:text-[120px] text-start font-semibold uppercase tracking-tighter text-white lg:pl-1"
             }
           />
-          <h2 className="text-sm lg:text-xl 2xl:text-2xl font-normal w-full text-start tracking-normal 2xl:leading-9 pl-3 text-white">
+          <motion.h2
+            initial={{ opacity: 0.6, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.9 }}
+            className="text-sm lg:text-xl 2xl:text-2xl font-normal w-full text-start tracking-normal 2xl:leading-9 pl-3 text-white"
+          >
             Struggling to select from thousands of CVs? onBoard makes hiring
             easy by providing only shortlisted candidates after initial
             interviews.
-          </h2>
+          </motion.h2>
 
-          <div className="w-full flex items-center pl-3 gap-5 mt-4">
+          <motion.div
+            initial={{ opacity: 0.6, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.9 }}
+            className="w-full flex items-center pl-3 gap-5 mt-4"
+          >
             <Link
               to="/"
               className="bg-white text-black font-semibold px-4 md:px-8 py-4 rounded-full text-[15px] outline-none flex items-center gap-1"
@@ -39,7 +44,7 @@ const SectionOne = () => {
             >
               Recruit Talent
             </Link>
-          </div>
+          </motion.div>
         </div>
 
         <div className="relative">
